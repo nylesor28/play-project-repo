@@ -60,7 +60,7 @@ var CryptoCompareAPIKey = "47c595746df319744dafc11abb6db295cfe1ca9e302bec40e6c5a
 
 function fetchCoinTwitterFollowers(coinId){
   var apiURL = `https://min-api.cryptocompare.com/data/social/coin/latest?coinId=${coinId}&apikey=${CryptoCompareAPIKey}`
-  var apiUrl = https://min-api.cryptocompare.com/data/social/coin/latest?coinId=5324&apikey=47c595746df319744dafc11abb6db295cfe1ca9e302bec40e6c5a038f1a494da"
+ 
  console.log("fetchCoinTwitterFollowers URL ", coinId,  apiURL)
 
   $.get(apiURL, function(data,status){
