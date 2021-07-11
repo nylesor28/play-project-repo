@@ -116,11 +116,9 @@ var searchIndividualTickerSymbol = function (tSymbol) {
     });
 };
 var getgiphy = function (tick) {
-  fetch(
-    "https:api.giphy.com/v1/gifs/search?q=" +
-      tick +
-      "&api_key=s5QeHwd3F0ZSScsfU69FCbZv9Untc0mC"
-  )
+  var  apiURL = "https:api.giphy.com/v1/gifs/search?q="+ tick +"&api_key=s5QeHwd3F0ZSScsfU69FCbZv9Untc0mC"
+  console.log(apiURL)
+  fetch(apiURL)
     .then(function (response) {
       if (response.ok) {
         return response.json();
